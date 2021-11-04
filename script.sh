@@ -3,7 +3,7 @@
 echo "what is project name?"
 read project_name
 
-yarn create react-app $project_name 
+yarn create react-app $project_name --template=typescript
 
 echo "project created!"
 
@@ -26,5 +26,27 @@ yarn add react-router-dom history
 echo "Installing types for router dom"
 
 yarn add @types/react-router-dom -D
+
+# Redux folders structure
+
+cd ./src
+
+mkdir store
+
+cd ./store
+
+touch index.ts
+
+mkdir modules
+
+cd ./modules
+
+touch rootReducer.ts
+
+touch rootSaga.ts
+
+
+
+
 
 
