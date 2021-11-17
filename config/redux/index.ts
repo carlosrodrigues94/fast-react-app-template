@@ -15,9 +15,9 @@ export interface IState {}
 const persist = () => {
   const persistedReducer = persistReducer(
     {
-      key: "vibbra-invoice-test",
+      key: "react-fast-project",
       storage,
-      whitelist: ["companies", "categories", "invoices", "config", "expenses"],
+      whitelist: [],
     },
     rootReducer
   );
